@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #031321;
+  
+
+}
+
+.container {
+  width: 80%;
+  height: 90%; 
+  
+  height: 600px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(img.jpg) no-repeat;
+  background: #48c9b0;
+  background:  #031321;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.container::before{
+    content: " ";
+    background:url(img.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.marqueeUser{
+  /* color:#362626;
+  font-size: 35px;
+  padding: 40px; */
+  font-size: 30px;
+  font-weight: 800;
+  color: #e4f6ca;
+  font-family: sans-serif;
+
+}
+.heading_line h1 {
+  padding: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #7de5e5;
+  text-shadow: 5px 5px 5px rgb(9, 191, 237);
+}
+
+/* .buttonset {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+input {
+  width: 200px;
+  height: 50px;
+  background: none;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+input:hover {
+  width: 130px;
+  /* border-color: #2ecc71; 
+  background-color: #2ecc71;
+  cursor: pointer;
+} */
+/* .buttonset{
+    margin: 50px;
+} */
+.buttonset a{
+    margin: 30px;
+    display: inline-block;
+    margin: 87px -41px 46px 212px;
+}
+ /* .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: consolas;
+        /* background: #031321; */
+        /* border: 2px solid red; */
+       /* border-radius: 24px;
+       
+       
+      }*/
+      /* .btn a{
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: rgb(9, 65, 72);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 24px;
+        overflow: hidden;
+        transition:inherit;
+      }
+      .btn1{
+        margin: 17px;
+        border: 2px solid aqua;
+        border-radius: 10px;
+        list-style: none;
+      }
+      a:hover{
+        color:#255784;
+        background-color: aqua;
+        box-shadow: 0 0 10px aqua,0 0 20px aqua,0 0 20px aqua;   /* in 20 px 10 px we set spread radius*/
+       /* transition-delay: 1s;
+        opacity: 0.8;
+      }
+      a span{
+        position: absolute;
+        display: block;
+      }
+      a span:nth-child(1){
+        top:0;
+        left:-100%;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(90deg,transparent,aqua);
+      }
+      a:hover span:nth-child(1){
+        left: 100%;
+        transition: 1s;
+      }
+      a span:nth-child(3){
+        bottom:0;
+        right:-100%;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(270deg,transparent,aqua);
+      }
+      a:hover span:nth-child(3){
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+      }
+      a span:nth-child(2){
+        top:-100%;
+        right:0;
+        width: 6px;
+        height:100%;
+        background: linear-gradient(180deg,transparent,aqua);
+      }
+      a:hover span:nth-child(2){
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+      }
+      
+      a span:nth-child(4){
+        bottom:-100%;
+        left:0;
+        width: 6px;
+        height:100%;
+        background: linear-gradient(360deg,transparent,aqua);
+      }
+      a:hover span:nth-child(4){
+        bottom: 100%;
+        transition: 1s;
+        transition-delay: 0.75s;
+      }
+      #pre{
+        margin-top: -1px;
+        margin-bottom: 0px;
+      
+      } */
+  a{
+        position:relative;
+        transform: translate(-50%,-50%);
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 400%;
+        border-radius: 30px;
+        z-index: 1;
+        color: #03051d;
+        font-size: 20px;
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-weight: bold;
+
+
+      }
+      a:hover{
+        animation: animate 8s linear infinite;
+      }
+      @keyframes animate {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+        
+      }
+      a:before{
+        content:' ';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: -1;
+        background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+        background-size: 400%;
+        border-radius: 40px;
+        opacity: 0;
+        transition: 0.5s;
+
+
+
+      }
+      a:hover::before{
+        filter:blur(20px);
+        opacity: 0.6;
+        animation: animate 8s linear infinite;
+      }
